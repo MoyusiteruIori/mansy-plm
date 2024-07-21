@@ -1,0 +1,16 @@
+python run_models.py --model mtio \
+ --test \
+ --train-dataset Wu2017 \
+ --test-dataset Wu2017 \
+ --his-window 5 \
+ --fut-window 15 \
+ --bs 512 \
+ --seed 5 \
+ --dataset-frequency 5 \
+ --sample-step 5 \
+ --hidden-dim 512 \
+ --block-num 2 \
+ --lr 0.0001 \
+ --epochs 200 \
+ --epochs-per-valid 3 \
+ --device cuda:0
